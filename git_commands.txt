@@ -1,0 +1,90 @@
+================================================================================
+GIT COMMANDS REFERENCE LOG
+Project: GitAssignment (University Git & GitHub Workflow Assignment)
+Repository: https://github.com/BhavyaAishwaryaNaiduAkula/git-assignment
+Author: Bhavya Aishwarya Naidu Akula
+================================================================================
+
+git init -b main
+Initializes a new Git repository locally with 'main' set as the default branch.
+
+git status
+Displays the state of the working tree and staging area, showing modified, untracked, or staged files.
+
+git add index.html about.html
+Stages specific files ('index.html' and 'about.html') preparing them for the initial commit.
+
+git commit -m "Initial project setup"
+Creates the initial repository commit recording the initial HTML files.
+
+git add index.html
+Stages the modified 'index.html' file after adding extra section content.
+
+git commit -m "Updated index page"
+Records a new commit containing the updated index page content on the main branch.
+
+git branch feature
+Creates a new branch named 'feature' based on the current HEAD commit.
+
+git checkout feature
+Switches the active working directory context to the newly created 'feature' branch.
+
+git branch --show-current
+Prints the name of the currently checked-out Git branch to verify the working context.
+
+git add about.html
+Stages the modified 'about.html' containing the newly added feature content.
+
+git commit -m "Added feature updates"
+Commits the changes made in 'about.html' exclusively to the 'feature' branch.
+
+git checkout main
+Switches the working directory context back to the primary 'main' branch.
+
+git merge feature
+Integrates the commits from the 'feature' branch into the currently checked-out 'main' branch.
+
+git log --oneline --graph --all
+Renders a visual, one-line graphical representation of all commits and branch pointers across the repository.
+
+git check-ignore -v sample.log temp/temp_data.tmp
+Verifies that specific files and directories are actively matched and excluded by patterns in .gitignore.
+
+git add .gitignore
+Stages the .gitignore configuration file so that exclusion rules are tracked by version control.
+
+git commit -m "Add .gitignore to ignore log files and temp directory"
+Saves the .gitignore rules in the repository history for team-wide consistency.
+
+git add README.md
+Stages the README.md file prior to demonstrating commit rollback operations.
+
+git commit -m "Add project README"
+Creates a commit snapshot containing the initial project README.
+
+git reset --soft HEAD~1
+Undoes the most recent commit by moving HEAD back one commit while safely keeping all file modifications staged and intact.
+
+git commit -m "Add project README documentation"
+Re-commits the verified project README documentation following the safe undo demonstration.
+
+git remote add origin https://github.com/BhavyaAishwaryaNaiduAkula/git-assignment.git
+Associates the local Git repository with the newly created public GitHub remote repository.
+
+git remote -v
+Displays the remote repository names alongside their corresponding fetch and push URLs.
+
+git push -u origin main
+Uploads local 'main' branch commits to the GitHub remote repository and establishes upstream tracking.
+
+git push origin feature
+Pushes the 'feature' branch to GitHub to persist the complete multi-branch project history.
+
+git add git_commands.txt
+Stages this comprehensive command log containing all Git operations executed during the assignment.
+
+git commit -m "Add git_commands.txt documenting all Git commands used"
+Commits the git commands reference file to the repository.
+
+git push
+Pushes all newly committed changes (including git_commands.txt) to the remote GitHub repository.
